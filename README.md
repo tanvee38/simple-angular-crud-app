@@ -1,5 +1,13 @@
 # TodoList
 
+First run json server as the back end with the following command:
+
+`json-server --watch db.json`
+
+json-server will load the backend server on port 3000. db.json is used as data storage and manipulation.
+
+Go to `http://localhost:3000/tasks` to see the existing tasks.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
 
 ## Development server
