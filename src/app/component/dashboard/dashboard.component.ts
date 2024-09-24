@@ -32,7 +32,8 @@ export class DashboardComponent {
   }
 
   addTask() {
-    this.taskObj.task_name = this.addTaskValue;
+    this.taskObj.name = this.addTaskValue;
+
     this.crudService.addTask(this.taskObj).subscribe(res => {
       this.ngOnInit();
       this.addTaskValue = '';
@@ -45,13 +46,15 @@ export class DashboardComponent {
   getAllTask() {
     this.crudService.getAllTask().subscribe(res => {
       this.taskArr = res;
+
+      console.log(this.taskArr);
     }, err => {
       alert(err);
     })
   }
 
   editTask() {
-    this.taskObj.task_name = this.editTaskValue;
+    this.taskObj.name = this.editTaskValue;
 
     console.log(this.taskObj);
     
@@ -72,7 +75,7 @@ export class DashboardComponent {
 
   call(eTask : Task) {
     this.taskObj = eTask;
-    this.editTaskValue = eTask.task_name;
+    this.editTaskValue = eTask.name;
   }
 
 }

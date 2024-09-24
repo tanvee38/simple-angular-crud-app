@@ -2,11 +2,11 @@
   "tasks": [
     {
       "id": "82bd",
-      "task_name": "Eat dinner"
+      "name": "Eat dinner"
     },
     {
       "id": "9d7f",
-      "task_name": "Turn off light and Go to bed"
+      "name": "Turn off light and Go to bed"
     }
   ]
 }

@@ -21,7 +21,7 @@
                     <div class="m-3" *ngFor="let task of taskArr">
                         <div class="p-2 shadow">
                             <div class="input-group row ps-3">
-                                <div class="card col-md-10">{{task.task_name}}</div>
+                                <div class="card col-md-10">{{task.name}}</div>
                                 <button class="btn btn-outline-primary col" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="call(task)">e</button>
                                 <button class="btn btn-outline-danger col" (click)="deleteTask(task)">X</button>
                             </div>
