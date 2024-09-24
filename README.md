@@ -1,5 +1,11 @@
 # TodoList
 
+## Run todo api with my dotnet todo api (https://github.com/tanvee38/dotnet-todo-api)
+
+follow this dotnet todo api project, run the api.
+
+## Run todo api with json server
+
 First run json server as the back end with the following command:
 
 `npx json-server --watch db.json`
