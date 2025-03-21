@@ -73,12 +73,10 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd simple-angular-crud-app
           npm install
 
       - name: Build Angular App
         run: |
-          cd simple-angular-crud-app
           npm run build -- --configuration=production
 
       - name: Deploy to Azure Static Web Apps
@@ -87,5 +85,5 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "simple-angular-crud-app/dist/todo-list"  # Update this path
+          app_location: "dist/todo-list"  # Update this path
           output_location: ""
