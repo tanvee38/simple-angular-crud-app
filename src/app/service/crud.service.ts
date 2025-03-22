@@ -17,7 +17,8 @@ export class CrudService {
 
     // use this backend url when you use and run restApi .net core api service. 
     // This RestApi project is in my github repo too.
-    this.serviceURL = "http://localhost:5001/api/Todos";
+    // this.serviceURL = "http://localhost:5001/api/Todos";
+    this.serviceURL = "https://todo-api-app-bve7g4h4b4c4fagt.canadacentral-01.azurewebsites.net/api/todos";
   }
 
   addTask(task : Task) : Observable<Task> {
